@@ -2,17 +2,157 @@
 Custom CSS
 */
 
+
 /*#ffc437*/
+
+.w3-animate-top {
+    position: relative;
+    -webkit-animation: animatetop 0.5s;
+    animation: animatetop 0.5s
+}
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+.w3-animate-left {
+    position: relative;
+    -webkit-animation: animateleft 5s;
+    animation: animateleft 5s
+}
+@-webkit-keyframes animateleft {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    20%,40%,60%,80%{
+        left: 0;
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+@keyframes animateleft {
+    0%{
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    20%,40%,60%,80%{
+        transform: translate(0%);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(50%);
+        opacity: 0;
+    }
+}
+.w3-animate-right {
+    position: relative;
+    -webkit-animation: animateright 0.5s;
+    animation: animateright 0.5s
+}
+@-webkit-keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+@keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+.w3-animate-bottom {
+    position: relative;
+    -webkit-animation: animatebottom 0.5s;
+    animation: animatebottom 0.5s
+}
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+.slider {
+    display: none;
+}
+span.text-content {
+    /*background: rgba(0,0,0,0.6);*/
+    /*border-radius: 100%;*/
+    color: white;
+    cursor: pointer;
+    display: table;
+    font-size: 1.125em;
+    width: 100px;
+    height: 100px;
+    /*margin: 26px 26px 26px 26px*/
+    position: absolute;
+    /*top: 0;*/
+    opacity: 0;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+span.text-content span {
+    display: table-cell;
+    text-align: center;
+    word-wrap: break-word;
+    vertical-align: middle;
+}
+div.img-wrapper a:hover span.text-content {
+    opacity: 1;
+}
 .enactusHighlight {
     color: #ffc437;
     font-style: normal;
     font-weight: 700;
 }
 .action_section {
-    background:linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/take_action_bg.png") no-repeat scroll 0 0 / cover;
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/take_action_bg.png") no-repeat scroll 0 0 / cover;
     padding-bottom: 55px;
 }
-
 .circular {
     width: 300px;
     height: 300px;
@@ -860,15 +1000,16 @@ a.mask {
     display: block;
 }
 img.zoom-img:hover {
-    -webkit-transform: scale(1.15);
+    -webkit-transform: scale(1.5);
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 750ms;
-    -moz-transform: scale(1.15);
+    -moz-transform: scale(1.5);
     -moz-transition-timing-function: ease-out;
     -moz-transition-duration: 750ms;
     overflow: hidden;
 }
 img.zoom-img {
+    text-align: center;
     -webkit-transform: scale(1, 1);
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 250ms;

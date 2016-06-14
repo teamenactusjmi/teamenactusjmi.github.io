@@ -23,6 +23,8 @@
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src=js/jquery-ui.min.js></script>
+	<script src=js/isInViewport.min.js></script>
 	<!-- Custom Theme files -->
 	<link href="css/style.css" rel='stylesheet' type='text/css' />
 	<!-- Custom Theme files -->
@@ -120,29 +122,32 @@
 	</script>
 	<!-- /script-for sticky-nav -->
 	<!--//header-->
-	<div style="margin-bottom: 0em "class="grid_2 action_section">
+	<div style="margin-bottom: 0em " class="grid_2 action_section">
 		<div class="container">
 			<h3>Seeing possibilities. Taking action. Enabling progress.</h3>
 			<h4 style="font-size: 3em;" class="text-center"><span class="enactusHighlight">EN</span>•
 				<span class="enactusHighlight">ACT</span>•
 				<span class="enactusHighlight">US</span></h4>
-				<div class="row">
-					<div class="col-sm-4">
-						<h3><span class="enactusHighlight">En</span><strong>trepreneurial<strong></h3><br>
-						<h4 style="color: black">Having the perspective to see an opportunity and the talent to create value from that opportunity.</h4>
-					</div>
-					<div class="col-sm-4">
-						<h3 ><span class="enactusHighlight">Act</span><strong>ion</strong></h3><br>
-						<h4 style="color: black">The willingness to do something and the commitment to see it through even when the outcome is not guaranteed.</h4>
-					</div>
-					<div class="col-sm-4">
-						<h3 ><span class="enactusHighlight">Us</span></h3><br>
-						<h4 style="color: black">A group of people who see themselves connected in some important way; individuals that are part of a greater whole.</h4>
-					</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<h3><span class="enactusHighlight">En</span><strong>trepreneurial<strong></h3>
+					<br>
+					<h4 style="color: black">Having the perspective to see an opportunity and the talent to create value from that opportunity.</h4>
 				</div>
-			<div class="clearfix"> </div>
+				<div class="col-sm-4">
+					<h3><span class="enactusHighlight">Act</span><strong>ion</strong></h3>
+					<br>
+					<h4 style="color: black">The willingness to do something and the commitment to see it through even when the outcome is not guaranteed.</h4>
+				</div>
+				<div class="col-sm-4">
+					<h3><span class="enactusHighlight">Us</span></h3>
+					<br>
+					<h4 style="color: black">A group of people who see themselves connected in some important way; individuals that are part of a greater whole.</h4>
+				</div>
 			</div>
+			<div class="clearfix"> </div>
 		</div>
+	</div>
 	</div>
 	<div class="grid_2">
 		<div class="container">
@@ -181,21 +186,50 @@
 		<div class="container">
 			<h3 class="head_2 wow rollIn" data-wow-delay="0.4s">Welcome to our team</h3>
 			<div class="img-wrapper wow slideInLeft" data-wow-delay="0.4s">
-				<a href="#"><img src="images/tpic1.jpg" class="img-responsive" alt="" /></a>
-				<a href="#"><img src="images/tpic2.jpg" class="img-responsive" alt="" /></a>
-				<a href="#"><img src="images/tpic3.jpg" class="img-responsive" alt="" /></a>
-				<a href="#"><img src="images/tpic6.jpg" class="img-responsive" alt="" /></a>
-				<a href="#"><img src="images/tpic5.jpg" class="img-responsive" alt="" /></a>
+				<a href="#"><img src="images/tpic1.jpg" class="img-responsive zoom-img" alt="Team Vasudha" />
+					<span class="text-content"><span>Team Vasudha</span></span>
+				</a>
+				<a href="#"><img src="images/tpic2.jpg" class="img-responsive zoom-img" alt="Team Aarogyam" />
+					<span class="text-content"><span>Team Aarogyam</span></span>
+				</a>
+				<a href="#"><img src="images/tpic3.jpg" class="img-responsive zoom-img" alt="Founders" />
+					<span class="text-content"><span>Founders</span></span>
+				</a>
+				<a href="#"><img src="images/tpic4.jpg" class="img-responsive zoom-img" alt="Technical Team" />
+					<span class="text-content"><span>Technical Team</span></span>
+				</a>
+				<a href="#"><img src="images/tpic5.jpg" class="img-responsive zoom-img" alt="Marketing Team" />
+					<span class="text-content"><span>Marketing Team</span></span>
+				</a>
 			</div>
 			<blockquote class="blockquote1">
-				<div class="block_info wow slideInRight" data-wow-delay="0.4s">
-					<span class="heading">“Alone we can do so little; together we can do so much” </span>
+				<div style="margin-top: 2.5em" class="block_info wow slideInRight" data-wow-delay="0.4s">
+					<span class="heading">“Alone we can do so little;&nbsp together we can do so much” </span>
 					<!-- words by founder -->
 				</div>
 				<!-- <span class="author wow bounce" data-wow-delay="0.4s"><a href="#">setu, (founder)</a></span> -->
 			</blockquote>
 		</div>
 	</div>
+	<script type="text/javascript">
+		$(".zoom-img").mouseenter(function() {
+			$(".zoom-img").css("visibility", "hidden");
+			$(this).css("visibility", "visible");
+			// $("span.heading").fadeOut("fast");
+		}).mouseleave(
+			function() {
+				$(".zoom-img").css("visibility", "visible");
+				// $("span.heading").fadeIn("fast");
+			}
+		);
+		$(".imp").hover(function() {
+				$(this).css("display", "block");
+			},
+			function() {
+				$(this).css("display", "none");
+			}
+		);
+	</script>
 	<!--<div class="grid_1">
 		<div class="container">
 			<h2 class="head_1 wow rotateInUpLeft" data-wow-delay="0.4s" align="center" style="padding-bottom:2em" >SOCIAL PARTNERS</h2>
@@ -252,11 +286,12 @@
 		</div>
 	</div>-->
 	<div class="students wow  zoomInDown" data-wow-delay="0.4s">
-		<div class="container">
-			<h3>NGO PARTNER</h3>
+		<h3>NGO PARTNERS</h3>
+		<div class="container slider w3-animate-left">
+
 			<div class="custom_testimonials_wrap_inner">
 				<address>
-					<img src="images/pic5.png" class="circular" alt=""/>
+					<img src="images/pic5.png" class="circular img-responsive" alt=""/>
 				</address>
 				<div class="extra-wrap">
 					<i class="fa quote fa-quote-left"></i>
@@ -266,7 +301,59 @@
 				<div class="clearfix"></div>
 			</div>
 		</div>
+		<div class="container slider w3-animate-left">
+			<div class="custom_testimonials_wrap_inner">
+				<address>
+					<img src="images/npic1.png" class="circular img-responsive" alt=""/>
+				</address>
+				<div class="extra-wrap">
+					<i class="fa quote fa-quote-left"></i>
+					<p>Saahasee</p>
+					<p class="m_2"><a href="#">-&nbsp;&nbsp; Saahasee works towards the empowerment of the urban poor whose sense of dignity and justice is not necessarily governed by only economic factors but factors such as equality of all human beings and equal opportunity for all.
+
+The focal point on which we leveraged all our interventions is the empowerment of women through thrift and credit groups wherein participation, inter-dependance, knowledge enhancement, sharing of knowledge and sustainability are key tenets. </a></p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="container slider w3-animate-left">
+			<div class="custom_testimonials_wrap_inner">
+				<address>
+					<img src="images/npic2.png" class="circular img-responsive" alt=""/>
+				</address>
+				<div class="extra-wrap">
+					<i class="fa quote fa-quote-left"></i>
+					<p>Shikhar</p>
+					<p class="m_2"><a href="#">-&nbsp;&nbsp;SHIKHAR ORGANISATION FOR SOCIAL DEVELOPMENT (SOSD) was initiated on 13th November 2001. SOSD is a developmental organization run by a group of professionals facilitating community development initiatives since it came into existence. Their strategy is to empower the vulnerable sections of the society by building their capacities through education, vocational training and skill–based development.</a></p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
 	</div>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		slideInit();
+	});
+		function slideInit(){
+			startIn = 0;
+			x = $(".slider");
+			for(var i = 0;i < x.length;i++)
+				x.eq(i).hide();
+			x.eq(startIn).show();
+			slides();
+		}
+		function slides(){
+			if(x.is( ':in-viewport' )){
+				x.eq(startIn++).hide();
+				startIn = startIn % x.length;
+				x.eq(startIn).show();
+				setTimeout(slides, 5000);
+			}
+			else {
+				setTimeout(slides, 5000);
+			}
+		}
+	</script>
 	<div class="footer wow fadeInRight" data-wow-delay="0.4s">
 		<div class="container">
 			<div class="footer_top">
