@@ -5,6 +5,15 @@ Custom CSS
 
 /*#ffc437*/
 
+hr{
+    color: #ffc437;
+    background-color: #ffc437;
+    width: 15em;
+    height: 0.25em;
+    border: 0px;
+    margin-top: 0;
+}
+
 .w3-animate-top {
     position: relative;
     -webkit-animation: animatetop 0.5s;
