@@ -30,9 +30,10 @@
 	<!-- Custom Theme files -->
 	<!--webfont-->
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
-	<!----font-Awesome----->
+	<!--font-Awesome----->
 	<link href="css/font-awesome.css" rel="stylesheet">
-	<!----font-Awesome----->
+	<!--font-Awesome----->
+	<!-- <link href="css/material-kit.css" rel='stylesheet' type='text/css' /> -->
 	<!--Animation-->
 	<script src="js/wow.min.js"></script>
 	<link href="css/animate.css" rel='stylesheet' type='text/css' />
@@ -84,7 +85,14 @@
 					<li><a href="about.html">About</a></li>
 					<li><a href="services.html">Projects</a></li>
 					<!-- <li><a href="services.html">Gallery</a></li> -->
-					<li><a href="contact.html">Contact</a></li>
+					<!-- <li class="dropdown">
+						<a href="#" class="dropbtn">Achievements</a>
+						<div class="dropdown-content">
+							<a href="#">Enactus Nationals</a>
+							<a href="#">CIE</a>
+							<a href="#">Link 3</a>
+						</div> -->
+							<li><a href="contact.html">Contact</a></li>
 				</ul>
 				<!-- script-nav -->
 				<script>
@@ -93,67 +101,67 @@
 					});
 				</script>
 				<!-- //script-nav -->
+				</div>
+				<div class="clearfix"> </div>
 			</div>
-			<div class="clearfix"> </div>
 		</div>
-	</div>
-	<!--script-->
-	<script>
-		$(document).ready(function() {
-			$(".top-nav li a").click(function() {
-				$(this).parent().addClass("active");
-				$(this).parent().siblings().removeClass("active");
+		<!--script-->
+		<script>
+			$(document).ready(function() {
+				$(".top-nav li a").click(function() {
+					$(this).parent().addClass("active");
+					$(this).parent().siblings().removeClass("active");
+				});
 			});
-		});
-	</script>
-	<!-- script-for sticky-nav -->
-	<script>
-		$(document).ready(function() {
-			var navoffeset = $(".header-home").offset().top;
-			$(window).scroll(function() {
-				var scrollpos = $(window).scrollTop();
-				if (scrollpos >= navoffeset) {
-					$(".header-home").addClass("fixed");
-				} else {
-					$(".header-home").removeClass("fixed");
-				}
-			});
+		</script>
+		<!-- script-for sticky-nav -->
+		<script>
+			$(document).ready(function() {
+				var navoffeset = $(".header-home").offset().top;
+				$(window).scroll(function() {
+					var scrollpos = $(window).scrollTop();
+					if (scrollpos >= navoffeset) {
+						$(".header-home").addClass("fixed");
+					} else {
+						$(".header-home").removeClass("fixed");
+					}
+				});
 
-		});
-	</script>
-	<!-- /script-for sticky-nav -->
-	<!--//header-->
-	<div style="margin-bottom: 0em " class="grid_2 action_section">
-		<div class="container">
-			<h3>Seeing possibilities. Taking action. Enabling progress.</h3>
-			<h4 style="font-size: 3em;" class="text-center"><span class="enactusHighlight">EN</span>•
+			});
+		</script>
+		<!-- /script-for sticky-nav -->
+		<!--//header-->
+		<div style="margin-bottom: 0em " class="grid_2 action_section">
+			<div class="container">
+				<h3>Seeing possibilities. Taking action. Enabling progress.</h3>
+				<h4 style="font-size: 3em;" class="text-center"><span class="enactusHighlight">EN</span>•
 				<span class="enactusHighlight">ACT</span>•
 				<span class="enactusHighlight">US</span></h4>
-			<div class="row">
-				<div class="col-sm-4">
-					<h3><span class="enactusHighlight">En</span><strong>trepreneurial<strong></h3>
-					<br>
-					<h4 style="color: black">Having the perspective to see an opportunity and the talent to create value from that opportunity.</h4>
+				<div class="row">
+					<div class="col-sm-4">
+						<h3><span class="enactusHighlight">En</span><strong>trepreneurial<strong></h3>
+						<br>
+						<h4 style="color: black">Having the perspective to see an opportunity and the talent to create value from that opportunity.</h4>
+					</div>
+					<div class="col-sm-4">
+						<h3><span class="enactusHighlight">Act</span><strong>ion</strong></h3>
+						<br>
+						<h4 style="color: black">The willingness to do something and the commitment to see it through even when the outcome is not guaranteed.</h4>
+					</div>
+					<div class="col-sm-4">
+						<h3><span class="enactusHighlight">Us</span></h3>
+						<br>
+						<h4 style="color: black">A group of people who see themselves connected in some important way; individuals that are part of a greater whole.</h4>
+					</div>
 				</div>
-				<div class="col-sm-4">
-					<h3><span class="enactusHighlight">Act</span><strong>ion</strong></h3>
-					<br>
-					<h4 style="color: black">The willingness to do something and the commitment to see it through even when the outcome is not guaranteed.</h4>
-				</div>
-				<div class="col-sm-4">
-					<h3><span class="enactusHighlight">Us</span></h3>
-					<br>
-					<h4 style="color: black">A group of people who see themselves connected in some important way; individuals that are part of a greater whole.</h4>
-				</div>
+				<div class="clearfix"> </div>
 			</div>
-			<div class="clearfix"> </div>
 		</div>
-	</div>
 	</div>
 	<div class="grid_2">
 		<div class="container">
 			<h3 class="head_1 wow rotateInUpLeft" data-wow-delay="0.4s">Our Projects</h3>
-			<div class="col-sm-4 col-sm-offset-1 box_6 wow rotateInDownLeft " data-wow-delay="0.4s">
+			<div class="col-sm-4 box_6 wow rotateInDownLeft " data-wow-delay="0.4s">
 				<img src="images/pic1.jpg" class="img-responsive" alt="" />
 				<div class="desc">
 					<h4>PROJECT VASUDHA</h4>
@@ -163,7 +171,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-4 col-sm-offset-1 box_6 wow rotateIn " data-wow-delay="0.2s">
+			<div class="col-sm-4 box_6 wow rotateIn " data-wow-delay="0.2s">
 				<img src="images/pic2.jpg" class="img-responsive" alt="" />
 				<div class="desc">
 					<h4>PROJECT AAROGYAM</h4>
@@ -173,14 +181,14 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="col-sm-4 box_6 wow lightSpeedIn" data-wow-delay="0.4s">
+			<div class="col-sm-4 box_6 wow lightSpeedIn" data-wow-delay="0.4s">
 		  	<img src="images/pic3.jpg" class="img-responsive" alt=""/>
 		  	<div class="desc">
-		  		<h4>Paper Bag Project</h4>
-		  		<p> Coming soon...</p>
+		  		<h4>CHETNA</h4>
+		  		<p>An awareness programme</p>
 		  		<div class="more"><a href="#"><img src="images/more.png" alt=""></a></div>
 		  	</div>
-		</div>-->
+		</div>
 		</div>
 	</div>
 	<div class="team">
@@ -205,7 +213,7 @@
 			</div>
 			<blockquote class="blockquote1">
 				<div style="margin-top: 2.5em" class="block_info wow slideInRight" data-wow-delay="0.4s">
-					<span class="heading">“Alone we can do so little;&nbsp together we can do so much” </span>
+					<span class="heading">“Alone we can do so little; &nbsp together we can do so much” </span>
 					<!-- words by founder -->
 				</div>
 				<!-- <span class="author wow bounce" data-wow-delay="0.4s"><a href="#">setu, (founder)</a></span> -->
@@ -231,61 +239,56 @@
 			}
 		);
 	</script>
-	<!--<div class="grid_1">
-		<div class="container">
-			<h2 class="head_1 wow rotateInUpLeft" data-wow-delay="0.4s" align="center" style="padding-bottom:2em" >SOCIAL PARTNERS</h2>
-			<div class="span12 hexagon_box">
-				<section class="effect-1">
-					<ul>
-						<li class="wow bounce" data-wow-delay="0.4s">
-							<div class="service-box hexagon">
-								<figure class="icon"><img src="images/icon_1.png" alt="" /></figure>
-								<div class="service-box_body">
-									<div class="btn-align"><a href="#" class="btn btn-inverse btn-normal btn-primary " target="_self">Commercialese</a></div>
-								</div>
-							</div>
-						</li>
-						<li class=" wow fadeInRight" data-wow-delay="0.4s">
-							<div class="service-box hexagon">
-								<figure class="icon"><img src="images/icon_2.png" alt="" /></figure>
-								<div class="service-box_body">
-									<div class="btn-align"><a href="#" class="btn btn-inverse btn-normal btn-primary " target="_self">Encomium</a></div>
-								</div>
-							</div>
-						</li>
-						<li class="wow fadeInUp" data-wow-delay="0.4s">
-							<div class="service-box hexagon">
-								<figure class="icon"><img src="images/icon_3.png" alt="" /></figure>
-								<div class="service-box_body">
-									<div class="btn-align"><a href="#" class="btn btn-inverse btn-normal btn-primary " target="_self">Algorythm</a></div>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</section>
-				<section class="lazy-load-box  effect-slidefromright">
-					<ul>
-						<li class="wow fadeInRight" data-wow-delay="0.4s">
-							<div class="service-box hexagon">
-								<figure class="icon"><img src="images/icon_4.png" alt="" /></figure>
-								<div class="service-box_body">
-									<div class="btn-align"><a href="#" class="btn btn-inverse btn-normal btn-primary " target="_self">Aalen</a></div>
-								</div>
-							</div>
-						</li>
-						<li class="wow bounceInDown" data-wow-delay="0.4s">
-							<div class="service-box hexagon">
-								<figure class="icon"><img src="images/icon_5.png" alt="" /></figure>
-								<div class="service-box_body">
-									<div class="btn-align"><a href="#" class="btn btn-inverse btn-normal btn-primary " target="_self">Ecocracy</a></div>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</section>
+	<div class="grid_2">
+
+		<div id="exTab1" class="container">
+			<h1 style="text-align:center; padding:2em 0em 1em 0em"><strong>OUR ACHIEVEMENTS</strong></h1>
+			<div id="exTab">
+				<ul class="nav nav-pills">
+					<li>
+						<a id="anc1" href="#1a" data-toggle="tab">CIE</a>
+					</li>
+					<li class="active">
+						<a id="anc2" href="#2a" data-toggle="tab">NATIONALS</a>
+					</li>
+					<!-- <li><a href="#3a" data-toggle="tab">Applying clearfix</a>
+			</li>
+  		<li><a href="#4a" data-toggle="tab">Background color</a>
+			</li> -->
+				</ul>
+			</div>
+			<div class="tab-content clearfix">
+				<div class="tab-pane" id="1a">
+					<h2>Innovate for a cause was organised by the Centre of Innovation and Entrepreneurship( CIE ) on 17th march 2016. Out of the 27 entries , 13 teams were shortlisted for the second round after which 6 teams were selected for the final round. After each presentation followed a question and answer round. Team Enactus presented their innovation - PROJECT VASUDHA and came through with flying colors and stood 1st in this years' competition. </h2>
+				</div>
+				<div class="tab-pane active" id="2a">
+					<h2>Jamia Millia Islamia participated for the first time this year since its inception in October 2015 and beating all the odds were declared as the winners in the Enactus Nationals Competition - Rookie League [2016].</h2>
+				</div>
+				<!-- <div class="tab-pane" id="3a">
+          <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
+				</div>
+          <div class="tab-pane" id="4a">
+          <h3>We use css to change the background color of the content to be equal to the tab</h3>
+				</div> -->
 			</div>
 		</div>
-	</div>-->
+		<script type="text/javascript">
+			$(function() {
+				$('#anc1').click(function() {
+					$('.tab-content').css({
+						'background': 'linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/about.jpg")  no-repeat scroll 0 0',
+						'background-size': '100%',
+					});
+				});
+				$('#anc2').click(function() {
+					$('.tab-content').css({
+						'background': 'linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/nationals.jpg")  no-repeat scroll 0 0',
+						'background-size': '100%',
+					});
+				});
+			});
+		</script>
+	</div>
 	<div style="overflow: hidden; position: relative;" class="students wow  zoomInDown" data-wow-delay="0.4s">
 		<h3>NGO PARTNERS</h3>
 		<div class="container slider w3-animate-left">
@@ -331,26 +334,28 @@ The focal point on which we leveraged all our interventions is the empowerment o
 			</div>
 		</div>
 	</div>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
-	$(document).ready(function(){
-		slideInit();
-	});
-		function slideInit(){
+		$(document).ready(function() {
+			slideInit();
+		});
+
+		function slideInit() {
 			startIn = 0;
 			x = $(".slider");
-			for(var i = 0;i < x.length;i++)
+			for (var i = 0; i < x.length; i++)
 				x.eq(i).hide();
 			x.eq(startIn).show();
 			slides();
 		}
-		function slides(){
-			if(x.is( ':in-viewport' )){
+
+		function slides() {
+			if (x.is(':in-viewport')) {
 				x.eq(startIn++).hide();
 				startIn = startIn % x.length;
 				x.eq(startIn).show();
 				setTimeout(slides, 5000);
-			}
-			else {
+			} else {
 				setTimeout(slides, 5000);
 			}
 		}
