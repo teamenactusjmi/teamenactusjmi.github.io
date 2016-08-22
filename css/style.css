@@ -4,6 +4,93 @@ Custom CSS
 
 
 /*#ffc437*/
+#exTab{
+    float:left;
+    width:100%;
+    background:#fff;
+    border-bottom:4px solid #000;
+    overflow:hidden;
+    position:relative;
+}
+
+#exTab1 .tab-content {
+    color : #ffc437;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/nationals.jpg")  no-repeat scroll 0 0;
+    background-size: 100% ;
+    padding : 5px 15px;
+    height: 35em;
+}
+#exTab1 .tab-content h2,h3{
+    color:white;
+    text-align:center;
+    margin-top:12em;
+}
+
+#exTab ul{
+    clear:left;
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    left:50%;
+    text-align:center;
+}
+#exTab ul li{
+    display:block;
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    right:50%;
+}
+/*#exTab:active{
+    color: #fff;
+}*/
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+    border-radius: 0;
+    color: #ffc437;
+}
+
+/*#2a:active {
+    background: url("../images/nationals.jpg");
+}*/
+
+li a, .dropbtn {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #312934 ;
+}
+
+li.dropdown {
+    display: block;
+    align-self: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffc437;
+    padding:38px 20px 36px 20px;
+}
+
+.dropdown-content a {
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #000000}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 hr{
     color: #ffc437;
@@ -281,10 +368,6 @@ span.main {
 .top-nav ul li.active a, .top-nav ul li a:hover {
     color: #fff;
     background: #312934;
-    -webkit-transform: rotateY(70deg);
-    -moz-transform: rotateY(70deg);
-    -ms-transform: rotateY(70deg);
-    transform: rotateY(70deg);
 }
 .border-side {
     position: absolute;
