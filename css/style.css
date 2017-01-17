@@ -664,7 +664,7 @@ p.m_2 a:hover {
 .footer {
     background: #312934;
     padding-top: 3em;
-    padding-bottom: 3em;
+    padding-bottom: 3.5em !important;
 }
 ul.list1 {
     padding: 0;
