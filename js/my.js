@@ -1,4 +1,4 @@
-$('#container').imagesLoaded( function() {
+$(document).ready(function() {
     $(".se-pre-con").fadeOut(500);
 });
 // .progress( function( instance, image ) {
