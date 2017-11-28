@@ -1,0 +1,20 @@
+{
+    "name": "Enactus Jamia Millia Islamia",
+    "short_name": "Enactus JMI",
+    "default_locale": "en",
+    "description": "Enactus is an international non-profit organization that nurtures managerial skills of students.",
+    "start_url": "/",
+    "background_color": "#ffc437",
+    "theme_color": "#ffc437",
+    "display": "standalone",
+    "icons": [{
+        "src": "icon-256.png",
+        "sizes": "256x256",
+        "type": "image/icon-256.png"
+    },
+    {
+        "src": "icon-512.png",
+        "sizes": "512x512",
+        "type": "image/icon-512.png"
+    }]
+}
