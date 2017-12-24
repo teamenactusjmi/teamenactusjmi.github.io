@@ -1,0 +1,79 @@
+.cd-top {
+    background-color: #ffc437;
+    bottom: 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 24px;
+    position: fixed;
+    opacity: 0;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transform: scale(5) translate(47px,-10px);
+    -moz-transform: scale(5) translate(47px,-10px);
+    -moz-transform: scale(5) translate(47px,-10px);
+    -o-transform: scale(5) translate(47px,-10px);
+    -ms-transform: scale(5) translate(47px,-10px);
+    transform: scale(5) translate(47px,-10px);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    visibility: hidden;
+    white-space: nowrap;
+    width: 100%
+}
+
+.cd-top.cd-is-visible,.no-touch .cd-top:hover {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.cd-top.cd-is-visible {
+    opacity: .9;
+    -webkit-transform: scale(1) translate(0px,0px);
+    -moz-transform: scale(1) translate(0px,0px);
+    -o-transform: scale(1) translate(0px,0px);
+    -ms-transform: scale(1) translate(0px,0px);
+    transform: scale(1) translate(0px,0px);
+    visibility: visible
+}
+
+.cd-top.cd-is-visible:hover {
+    color: #fff;
+    opacity: 1
+}
+
+.cd-top:hover {
+    text-decoration: none
+}
+
+.cd-top .fa {
+    padding: 16px 16px
+}
+
+.cd-top span:last-child {
+    padding: 13px 16px
+}
+
+@media (min-width: 768px) {
+
+    .cd-top {
+        bottom: 40px;
+        width: auto;
+        right: -170px;
+    }
+
+    .cd-top:hover {
+        right: 0;
+    }
+
+    .cd-top .fa {
+        border-right: 1px solid #fff;
+    }
+}
