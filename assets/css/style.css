@@ -146,7 +146,7 @@ a:hover, a:focus, a:active {
   width: 50px;
 }
 .carousel-home .carousel-caption {
-  top: 50%;
+  top: 83%;
   bottom: auto;
   transform: translateY(-50%);
 }
@@ -325,7 +325,7 @@ a:hover, a:focus, a:active {
 /* Pages 
 ================================= */
 #imdaad-heading{
-  background-image: url("../images/imdaad_pro/page-head.jpeg");
+  background-image: url("../images/imdaad_pro/page-head.jpg");
   background-position:center;
   background-size: cover;
 
