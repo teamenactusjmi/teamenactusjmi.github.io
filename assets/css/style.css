@@ -795,7 +795,7 @@ form .alert {
   
   .team img
   {
-  max-height: 350px!important;
+  max-height: 1000px!important;
   display: block;
 
   margin-left: auto;
