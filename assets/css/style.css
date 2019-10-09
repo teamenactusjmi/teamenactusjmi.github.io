@@ -829,11 +829,40 @@ form .alert {
 
   .team
   {
-    text-align: center;
-  }
+    text-align: left;
 }
 /* Extra Small devices (tablets, 480px and Down) */
 @media (max-width: 480px) {
+  .team img
+  {
+  max-height: 1000px!important;
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+  
+  }
+  .t1 img  {
+    margin-right: 23px!important;
+  }
+  .t2 img  {
+    margin-left: 27px!important;
+  }
+  .t3 img  {
+    margin-left: 23px!important;
+  }
+  .t4 img  {
+    margin-left: 30px!important;
+  }
+  .t5 img  {
+    margin-right: 10px!important;
+  }
+  .t7 img  {
+    margin-left: 35px!important;
+  }
+  .t6 img  {
+    margin-right: 35px!important;
+  }
 
   .carousel-home .carousel-title {
     font-size: 16px;
@@ -845,11 +874,8 @@ form .alert {
   }
   .carousel-home .carousel-indicators {
     bottom: 0;
-  }
-  .team img
-  {
-  max-height: 350px!important;
-  }
+ 
+
 }
 /* =============================================================================
 	Animations
