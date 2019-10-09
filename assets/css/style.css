@@ -792,6 +792,40 @@ form .alert {
   .col-form {
     margin-bottom: 25px;
   }
+  
+  .team img
+  {
+  max-height: 350px!important;
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+  
+  }
+  .t1 img  {
+    margin-right: 23px!important;
+  }
+  .t2 img  {
+    margin-left: 27px!important;
+  }
+  .t3 img  {
+    margin-left: 23px!important;
+  }
+  .t4 img  {
+    margin-left: 30px!important;
+  }
+  .t5 img  {
+    margin-right: 10px!important;
+  }
+  .t7 img  {
+    margin-right: 35px!important;
+  }
+  
+
+  .team
+  {
+    text-align: center;
+  }
 }
 /* Extra Small devices (tablets, 480px and Down) */
 @media (max-width: 480px) {
@@ -806,6 +840,10 @@ form .alert {
   }
   .carousel-home .carousel-indicators {
     bottom: 0;
+  }
+  .team img
+  {
+  max-height: 350px!important;
   }
 }
 /* =============================================================================
