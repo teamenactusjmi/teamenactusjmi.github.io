@@ -792,7 +792,24 @@ form .alert {
   .col-form {
     margin-bottom: 25px;
   }
+  .team
+{
+  text-align: justify;
+  
+  
 }
+.image-size
+{
+  max-height: 800px!important;
+ 
+}
+}
+
+
+
+
+
+
 /* Extra Small devices (tablets, 480px and Down) */
 @media (max-width: 480px) {
 
@@ -808,6 +825,7 @@ form .alert {
     bottom: 0;
   }
 }
+
 /* =============================================================================
 	Animations
 ========================================================================== */
